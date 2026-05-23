@@ -1,0 +1,33 @@
+<main class="main-content">
+  <div class="panel">
+    <h2>Painel de Automação</h2>
+    
+    <div class="form-group">
+      <label for="username">Username Roblox:</label>
+      <input type="text" id="username" placeholder="Digite o nome do usuário" required>
+    </div>
+
+    <div class="form-group">
+      <label for="botCount">Número de Bots:</label>
+      <input type="number" id="botCount" min="1" max="10" value="1" required>
+    </div>
+
+    <button id="startBtn" class="btn btn-primary">▶️ Iniciar Automação</button>
+    <button id="stopBtn" class="btn btn-danger" disabled>⏹️ Parar</button>
+  </div>
+
+  <div class="panel">
+    <h3>Status em Tempo Real</h3>
+    <div id="status" class="status-box">
+      <p><strong>Status:</strong> <span id="statusText">Parado</span></p>
+      <p><strong>Seguidores Adicionados:</strong> <span id="followCount">0</span></p>
+      <p><strong>Sucesso:</strong> <span id="successCount">0</span></p>
+      <p><strong>Falhas:</strong> <span id="failCount">0</span></p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Log de Atividades</h3>
+    <div id="log" class="log-box"></div>
+  </div>
+</main>
