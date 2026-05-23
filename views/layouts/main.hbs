@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}} - Dashboard</title>
+  <title>ARCH MARLINUX</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">🎮 Roblox Follow Bot</h1>
-      <ul class="nav-links">
-        <li><a href="/">Dashboard</a></li>
-        <li><a href="#">Status</a></li>
-      </ul>
+  <div id="keyModal" class="modal active">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>ARCH MARLINUX</h1>
+        <p>Sistema de Automação Roblox</p>
+      </div>
+      <div class="modal-body">
+        <p class="warning">⚠️ Acesso Restrito - Digite a chave de desenvolvedor</p>
+        <input type="password" id="keyInput" placeholder="Insira a chave..." autofocus>
+        <button id="keySubmitBtn" class="btn-auth">ACESSAR</button>
+        <p id="keyError" class="error-msg" style="display:none;">Chave inválida</p>
+      </div>
     </div>
-  </nav>
-
-  <div class="container">
-    {{{body}}}
   </div>
 
-  <footer class="footer">
-    <p>&copy; 2026 Roblox Follow Bot. Todos os direitos reservados.</p>
-  </footer>
+  <div id="mainPanel" class="main-panel" style="display:none;">
+    {{{body}}}
+  </div>
 
   <script src="/js/main.js"></script>
 </body>
